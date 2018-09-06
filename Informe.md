@@ -9,3 +9,8 @@
 1. Algoritmos
 1. Complejidad
 1. Conclusiones
+
+'''python
+def OptimizedTSP:
+return min(x,y,algo)
+'''
