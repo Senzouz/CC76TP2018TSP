@@ -10,6 +10,11 @@ El presente trabajo realiza una invesigacion, dentro del marco del Trabajo Parci
 
 2. Motivación
 3. Problema
+
+Dada una colección de ciudades y el costo de viaje entre cada par de ellas, el **TSP** se trata de encontrar el camino más barato en el que se visiten todas estas ciudades y regresar al punto inicial. En su versión estandar, el costro del viaje es simétrico en el sentido que viajar de la ciudad A hacia la ciudad B cuesta lo mismo que viajar de B hacia A.
+La simplicidad del enunciado de este problema es engañosa, dado que el TSP es uno de los problemas en matemática computacional más intensamente estudiado y aún no se conoce una solución efectiva para todos los casos.
+Aunque la compejidad del TSP aún es desconocida, por más de 50 años su estudio ha guiado el camino para métodos de solución mejorados en muchas áreas de optimización matemática.(2)
+
 4. Objetivos
 5. Marco Teórico
 6. Solución
@@ -17,4 +22,5 @@ El presente trabajo realiza una invesigacion, dentro del marco del Trabajo Parci
 8. Complejidad
 9. Conclusiones
 
-(1) ESPINOZA, Daniel. EL Problema del Vendedor Viajero (TSP) y Programación Entera (IP).Chile. Universidad de Chile. [http://www.dii.uchile.cl/~daespino/PApers/TSP_and_IP_chile_050820.pdf](http://www.dii.uchile.cl/~daespino/PApers/TSP_and_IP_chile_050820.pdf) (Consultado el dia 13 de setiembre de 2018)
+(1) ESPINOZA, Daniel. El Problema del Vendedor Viajero (TSP) y Programación Entera (IP).Chile. Universidad de Chile. [http://www.dii.uchile.cl/~daespino/PApers/TSP_and_IP_chile_050820.pdf](http://www.dii.uchile.cl/~daespino/PApers/TSP_and_IP_chile_050820.pdf) (Consultado el dia 13 de setiembre de 2018)
+(2) COOK, William. The Travelling Salesman Problem. Canada. University of Waterloo. [http://www.math.uwaterloo.ca/tsp/problem/index.html]
