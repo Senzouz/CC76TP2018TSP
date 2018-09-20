@@ -18,7 +18,17 @@ La simplicidad del enunciado de este problema es engañosa, dado que el TSP es u
 Aunque la compejidad del TSP aún es desconocida, por más de 50 años su estudio ha guiado el camino para métodos de solución mejorados en muchas áreas de optimización matemática.(2)
 
 4. Objetivos
+
+  - Objetivo General
+        - Implementar un algoritmo que resuelva el Problema del vendedor viajero
+  - Objetivos Secundarios
+        - Implementar el ingreso de la ciudad a la que se quiere llegar
+        - Mostrar el recorrido que se ha realizado
+
 5. Marco Teórico
+
+
+
 6. Solución
 7. Algoritmos implementados
 8. Complejidad
