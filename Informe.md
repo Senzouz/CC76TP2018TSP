@@ -81,7 +81,7 @@ Dentro de la implementacion, se tiene las dos diferentes formas de representacio
           start = points[0]
        return min([perm for perm in permutations(points) if perm[0] == start], key=total_distance)  
  
- e.**Algoritmo inocente TSP**
+ e. **Algoritmo inocente TSP**
  ```c++
  int TSP(int grafo[][V], int inicio)
 {
