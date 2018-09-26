@@ -53,7 +53,7 @@ Dentro de la implementacion, se tiene las dos diferentes formas de representacio
 
 7. Algoritmos implementados
 
-  a. **Algoritmo de Fuerza Bruta TSP** 
+  a. **Algoritmo de Fuerza Bruta TSP en python** 
 ```python
   def Read(filename):
     G = []
@@ -75,7 +75,7 @@ Dentro de la implementacion, se tiene las dos diferentes formas de representacio
           start = points[0]
        return min([perm for perm in permutations(points) if perm[0] == start], key=total_distance)  
  ```
- b. **Algoritmo inocente TSP**
+ b. **Algoritmo inocente TSP en c++**
  ```c++
  int TSP(int grafo[][V], int inicio)
 {
