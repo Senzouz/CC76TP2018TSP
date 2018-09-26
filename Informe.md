@@ -21,22 +21,31 @@ Aunque la compejidad del TSP aún es desconocida, por más de 50 años su estudi
 4. Objetivos
 
   - Objetivo General
-        - Implementar un algoritmo que resuelva el Problema del vendedor viajero
+        - Mostrar el costo minimo del grafo para y regresar al punto inicial
   - Objetivos Secundarios
         - Implementar el ingreso de la ciudad a la que se quiere llegar
-        - Mostrar el recorrido que se ha realizado
 
-5. Marco Teórico - Grafos:
+5. Marco Teórico 
+
+- Grafos:
 
 Los grafos es un concepto que se utiliza para representar muchos objetos que estan asociados a nuestra realidad, por ejemplo un sistema de carreteras, las conexiones o redes de internet y cualquier problema que se presente. Formalmente, un grafo se representa por un conjunto de vertices y aristas de la siguiente forma:
               G = (V,E)
  Donde:
- - G: grafo
- - V: vertice
- - E: arista la cual, esta compuesta por (v,w)
+    - G: grafo
+    - V: vertice
+    - E: arista la cual, esta compuesta por (v,w)
  
 Ademas se debe coniderar el concepto de ruta, dado que nuestro caso, es nuestro objetivo. Una ruta es una secuencia de vertices que estan conectados por las aristas. 
 Dentro de la implementacion, se tiene las dos diferentes formas de representacion : matriz de adyacencia (matriz bidimensional) y lista de adyacencia (mucho mas eficiente y mas compacto)
+
+- Fuerza Bruta
+
+
+
+- Heuristica
+
+
 
 6. Solución
 
@@ -52,6 +61,7 @@ Dentro de la implementacion, se tiene las dos diferentes formas de representacio
 
 9. Conclusiones
 
+Luego de hacer las debidas 
 
 
 10. Bibliografia
@@ -59,3 +69,9 @@ Dentro de la implementacion, se tiene las dos diferentes formas de representacio
 (1) ESPINOZA, Daniel. El Problema del Vendedor Viajero (TSP) y Programación Entera (IP).Chile. Universidad de Chile. [http://www.dii.uchile.cl/~daespino/PApers/TSP_and_IP_chile_050820.pdf](http://www.dii.uchile.cl/~daespino/PApers/TSP_and_IP_chile_050820.pdf) (Consultado el dia 13 de setiembre de 2018)
 
 (2) COOK, William. The Travelling Salesman Problem. Canada. University of Waterloo. [http://www.math.uwaterloo.ca/tsp/problem/index.html]
+
+(3) Traveling Salesman Problem (TSP) Implementation
+[https://www.geeksforgeeks.org/traveling-salesman-problem-tsp-implementation/]
+
+(4)Travelling salesman using brute-force and heuristics
+[https://codereview.stackexchange.com/questions/81865/travelling-salesman-using-brute-force-and-heuristics]
