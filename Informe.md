@@ -27,24 +27,13 @@ Aunque la compejidad del TSP aún es desconocida, por más de 50 años su estudi
 
 5. Marco Teórico 
 
-- Grafos:
-
-Los grafos es un concepto que se utiliza para representar muchos objetos que estan asociados a nuestra realidad, por ejemplo un sistema de carreteras, las conexiones o redes de internet y cualquier problema que se presente. Formalmente, un grafo se representa por un conjunto de vertices y aristas de la siguiente forma:
-              G = (V,E)
- Donde:
-    - G: grafo
-    - V: vertice
-    - E: arista la cual, esta compuesta por (v,w)
- 
-Ademas se debe coniderar el concepto de ruta, dado que nuestro caso, es nuestro objetivo. Una ruta es una secuencia de vertices que estan conectados por las aristas. 
-Dentro de la implementacion, se tiene las dos diferentes formas de representacion : matriz de adyacencia (matriz bidimensional) y lista de adyacencia (mucho mas eficiente y mas compacto)
-
-- Fuerza Bruta
-
-
-
-- Heuristica
-
+- Algoritmo de busqueda por Fuerza Bruta
+ O tambien llamada búsqueda exhaustiva o como generar y probar, es una técnica muy general de resolución de  problemas y paradigmas
+ algorítmicos que consiste en enumerar sistemáticamente todos los posibles candidatos para la solución y verificar
+ si cada candidato satisface la afirmación del problema. Es simple de implementar, y siempre encontrará una solución, si existe. Sin 
+ embargo su costo es proporcional al número de soluciones candidatas, que en muchos problemas prácticos tiende a crecer muy rápidamente
+ a medida que aumenta el tamaño del problema. Por lo tanto este algoritmmo se usa cuando el tamaño del problema es limitado o de un
+ tamaño manejable. El método también se usa cuando la simplicidad de la implementación es más importante que la velocidad.
 
 
 6. Solución
