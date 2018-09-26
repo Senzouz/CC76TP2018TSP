@@ -53,7 +53,33 @@ Dentro de la implementacion, se tiene las dos diferentes formas de representacio
 
 7. Algoritmos implementados
 
+  a. Lectura de archivos en Python
 
+  def Read(filename):
+    G = []
+    i = 0
+    file = open(filename)
+    for line in file:
+        G.append([float(x) for x in line.split('\t')])
+        
+    return G
+  
+  **Fuerza Bruta**
+  b. **Distancia entre puntos (Python)**
+  
+  def distancia(point1, point2):
+     return ((point1[0] - point2[0])**2 + (point1[1] - point2[1])**2) ** 0.5
+
+
+  c. **Total de distancia**
+  def total_distancia(points):
+     return sum([distancia(point, points[index + 1]) for index, point in enumerate(points[:-1])])
+  
+  d. **TSP**
+  def travelling_salesman(points, start=None):
+     if start is None:
+        start = points[0]
+     return min([perm for perm in permutations(points) if perm[0] == start], key=total_distance)  
 
 8. Complejidad
 
