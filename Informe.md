@@ -54,35 +54,67 @@ Dentro de la implementacion, se tiene las dos diferentes formas de representacio
 7. Algoritmos implementados
 
   a. Lectura de archivos en Python
-```python
+
   def Read(filename):
     G = []
     i = 0
     file = open(filename)
     for line in file:
-        G.append([ float(x) for x in line.split('\t') ])
-    
+        G.append([float(x) for x in line.split('\t')])
+        
     return G
-  ```
+  
   **Fuerza Bruta**
   b. **Distancia entre puntos (Python)**
-```python
+  
   def distancia(point1, point2):
        return ((point1[0] - point2[0])**2 + (point1[1] - point2[1])**2) ** 0.5
-```
+
 
   c. **Total de distancia**
-```python
   def total_distancia(points):
        return sum([distancia(point, points[index + 1]) for index, point in enumerate(points[:-1])])
-```  
+  
   d. **TSP**
-```python
   def travelling_salesman(points, start=None):
        if start is None:
           start = points[0]
        return min([perm for perm in permutations(points) if perm[0] == start], key=total_distance)  
-```
+ 
+ e.**Algoritmo inocente TSP**
+ ```c++
+ int TSP(int grafo[][V], int inicio)
+{
+    // almacena todos los vérticos (ciudades) quitando la ciudad inicio
+    vector<int> vertices;
+    for (int i = 0; i < V; i++)
+        if (i != inicio)
+            vertices.push_back(i);
+ 
+    // store minimum weight Hamiltonian Cycle.
+    int camino_minimo = INT_MAX;
+    do {
+ 
+        // almacena el peso (costo) del camino que se está recorriendo
+        int peso_actual = 0;
+         
+        // calcular el preso de la ruta actual
+        int k = inicio;
+        for (int i = 0; i < vertices.size(); i++) {
+            peso_actual += grafo[k][vertices[i]];
+            k = vertices[i];
+        }
+        peso_actual += grafo[k][inicio];
+ 
+        // actualizar el valor del camino minimo
+        camino_minimo = min(camino_minimo, peso_actual);
+        
+    } while (next_permutation(vertices.begin(), vertices.end()));
+ 
+    return camino_minimo;
+}
+ ```
+
 8. Complejidad
 
 
