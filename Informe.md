@@ -106,12 +106,12 @@ print(total_distance(tsp(G)))
  ```
 
 8. Complejidad
-
+La complejidad del algoritmo de busqueda por fuerza bruta es de tiempo es O (N!). Por lo que nunca debe usarse en listas largas. 
 
 
 9. Conclusiones
 
-Luego de hacer las debidas 
+Luego de hacer las debidas pruebas, hemos comprobado que se puede impelementar una solucion para TSP en nodos de tamaño corto, debido a que el tiempo en el peor caso posible es factorial de n  
 
 
 10. Bibliografia
