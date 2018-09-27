@@ -44,7 +44,7 @@ Aunque la compejidad del TSP aún es desconocida, por más de 50 años su estudi
 
   a. **Algoritmo de Fuerza Bruta TSP en python** 
 ```python
-  def Read(filename):
+def Read(filename):
     G = []
     i = 0
     file = open(filename)
@@ -53,16 +53,23 @@ Aunque la compejidad del TSP aún es desconocida, por más de 50 años su estudi
         
     return G
     
- def distancia(point1, point2):
-       return ((point1[0] - point2[0])**2 + (point1[1] - point2[1])**2) ** 0.5
-       
- def total_distancia(points):
-       return sum([distancia(point, points[index + 1]) for index, point in enumerate(points[:-1])])
-       
- def travelling_salesman(points, start=None):
-       if start is None:
-          start = points[0]
-       return min([perm for perm in permutations(points) if perm[0] == start], key=total_distance)  
+from itertools import permutations
+
+
+def distancia(point1, point2):
+    return ((point1[0] - point2[0])**2 + (point1[1] - point2[1])**2) ** 0.5
+
+
+def total_distancia(points):
+    return sum([distancia(point, points[index + 1]) for index, point in enumerate(points[:-1])])
+
+
+def tsp(points, start=None):
+    if start is None:
+        start = points[0]
+    return min([perm for perm in permutations(points) if perm[0] == start], key=total_distancia)
+
+print(total_distance(tsp(G))) 
  ```
  b. **Algoritmo inocente TSP en c++**
  ```c++
