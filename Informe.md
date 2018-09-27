@@ -104,32 +104,21 @@ print(total_distancia(tsp(G)))
  ```c++
  int TSP(int grafo[][V], int inicio)
 {
-    // almacena todos los vérticos (ciudades) quitando la ciudad inicio
     vector<int> vertices;
     for (int i = 0; i < V; i++)
         if (i != inicio)
             vertices.push_back(i);
- 
-    // almacena el Ciclo Hamiltoniano de menor peso.
     int camino_minimo = INT_MAX;
     do {
- 
-        // almacena el peso (costo) del camino que se está recorriendo
         int peso_actual = 0;
-         
-        // calculo del peso de la ruta actual
         int k = inicio;
         for (int i = 0; i < vertices.size(); i++) {
             peso_actual += grafo[k][vertices[i]];
             k = vertices[i];
         }
         peso_actual += grafo[k][inicio];
- 
-        // actualización el valor del camino minimo
-        camino_minimo = min(camino_minimo, peso_actual);
-        
-    } while (next_permutation(vertices.begin(), vertices.end()));
- 
+        camino_minimo = min(camino_minimo, peso_actual);        
+    } while (next_permutation(vertices.begin(), vertices.end())); 
     return camino_minimo;
 }
  ```
