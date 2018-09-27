@@ -75,12 +75,12 @@ def tsp(points, start=None):
     camino = [start]
     must_visit.remove(start)
     while must_visit:
-        nearest = min(must_visit, key=lambda x: distancia(path[-1], x))
+        nearest = min(must_visit, key=lambda x: distancia(camino[-1], x))
         camino.append(nearest)
         must_visit.remove(nearest)
     return camino
     
-print(total_distance(tsp(G))) 
+print(total_distancia(tsp(G))) 
  ```
  b. **Algoritmo inocente TSP en c++**
  ```c++
