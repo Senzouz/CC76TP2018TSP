@@ -81,7 +81,7 @@ print(total_distance(tsp(G)))
         if (i != inicio)
             vertices.push_back(i);
  
-    // store minimum weight Hamiltonian Cycle.
+    // almacena el Ciclo Hamiltoniano de menor peso.
     int camino_minimo = INT_MAX;
     do {
  
