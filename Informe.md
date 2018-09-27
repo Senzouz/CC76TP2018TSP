@@ -117,7 +117,7 @@ print(total_distancia(tsp(G)))
         // almacena el peso (costo) del camino que se está recorriendo
         int peso_actual = 0;
          
-        // calcular el preso de la ruta actual
+        // calculo del peso de la ruta actual
         int k = inicio;
         for (int i = 0; i < vertices.size(); i++) {
             peso_actual += grafo[k][vertices[i]];
@@ -125,7 +125,7 @@ print(total_distancia(tsp(G)))
         }
         peso_actual += grafo[k][inicio];
  
-        // actualizar el valor del camino minimo
+        // actualización el valor del camino minimo
         camino_minimo = min(camino_minimo, peso_actual);
         
     } while (next_permutation(vertices.begin(), vertices.end()));
