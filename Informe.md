@@ -67,7 +67,7 @@ regresar al punto inicial. Al finalizar, retorna la distancia total (minima).
 
 7. Algoritmos implementados
 
-  a. **Algoritmo de Fuerza Bruta TSP en python** 
+  a. **Algoritmo Heurístico TSP en python** 
 ```python
 def Read(filename):
     G = []
