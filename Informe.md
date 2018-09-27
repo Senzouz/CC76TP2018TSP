@@ -71,8 +71,15 @@ def total_distancia(points):
 def tsp(points, start=None):
     if start is None:
         start = points[0]
-    return min([perm for perm in permutations(points) if perm[0] == start], key=total_distancia)
-
+    must_visit = points
+    path = [start]
+    must_visit.remove(start)
+    while must_visit:
+        nearest = min(must_visit, key=lambda x: distance(path[-1], x))
+        path.append(nearest)
+        must_visit.remove(nearest)
+    return path
+    
 print(total_distance(tsp(G))) 
  ```
  b. **Algoritmo inocente TSP en c++**
