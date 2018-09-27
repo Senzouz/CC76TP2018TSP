@@ -39,6 +39,10 @@ Aunque la compejidad del TSP aún es desconocida, por más de 50 años su estudi
 6. Solución
 
 **Python**
+El algoritmo recibe una arreglo de puntos de coordenadas. Calcula el orden minimo de puntos de coordenadas segun su distancia entre 
+ellas utilizando fuerza bruta (min). Añade el punto a la lista "camino" y lo retira de "must_visit". Al finalizar, se calcula toda la 
+distancia total del camino segun su orden (enumerate).
+
 
 **C++**
 
@@ -56,9 +60,6 @@ def Read(filename):
         G.append([float(x) for x in line.split('\t')])
         
     return G
-    
-from itertools import permutations
-
 
 def distancia(point1, point2):
     return ((point1[0] - point2[0])**2 + (point1[1] - point2[1])**2) ** 0.5
