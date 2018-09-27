@@ -100,7 +100,7 @@ def tsp(points, start=None):
     
 print(total_distancia(tsp(G))) 
  ```
- b. **Algoritmo inocente TSP en c++**
+ b. **Algoritmo inocente TSP en C++**
  ```c++
  int TSP(int grafo[][V], int inicio)
 {
@@ -136,7 +136,8 @@ print(total_distancia(tsp(G)))
 
 8. Complejidad
 
-La complejidad del algoritmo de busqueda por fuerza bruta es de tiempo es O (N!). Por lo que nunca debe usarse en listas largas. 
+La complejidad del algoritmo de busqueda por fuerza bruta es de tiempo es O (N!). Por lo que nunca debe usarse en listas largas.
+En el caso del algoritmo heurístico la complejidad es de tiempo O(N^2)
 
 
 9. Conclusiones
