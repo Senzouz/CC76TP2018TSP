@@ -41,6 +41,7 @@ Aunque la compejidad del TSP aún es desconocida, por más de 50 años su estudi
 **Python**
 
 **C++**
+
 El algoritmo recibe una matriz de adyacencia, y calcula la menor distancia para ir desde una ciudad inicio hacia todas las demás y regresar al punto inicial. Al finalizar, retorna la distancia total (minima).
 
 7. Algoritmos implementados
