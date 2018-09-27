@@ -72,13 +72,13 @@ def tsp(points, start=None):
     if start is None:
         start = points[0]
     must_visit = points
-    path = [start]
+    camino = [start]
     must_visit.remove(start)
     while must_visit:
-        nearest = min(must_visit, key=lambda x: distance(path[-1], x))
-        path.append(nearest)
+        nearest = min(must_visit, key=lambda x: distancia(path[-1], x))
+        camino.append(nearest)
         must_visit.remove(nearest)
-    return path
+    return camino
     
 print(total_distance(tsp(G))) 
  ```
